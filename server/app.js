@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 const http = require("http");
 const socketIo = require("socket.io");
 
-dotenv.config();
+dotenv.config({path:'../process.env'});
 
 const app = express();
 const server = http.createServer(app);
@@ -40,6 +40,7 @@ const authRoutes = require("./routes/auth");
 const eventRoutes = require("./routes/events");
 const teamRoutes = require("./routes/teams");
 const scoreRoutes = require("./routes/scores");
+const path = require("path");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/events", eventRoutes);
