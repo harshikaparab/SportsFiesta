@@ -61,6 +61,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.route('/',(req,res) =>{
+  return 'Hello Harshika'
+})
+
 const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
