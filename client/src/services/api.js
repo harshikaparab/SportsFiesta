@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'https://sports-fiesta-api.vercel.app/', // Make sure this matches your backend URL
+    baseURL: 'https://sportsfiesta-kkwa.onrender.com', // Make sure this matches your backend URL
     headers: {
         'Content-Type': 'application/json',
     }
