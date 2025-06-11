@@ -13,7 +13,7 @@ const server = http.createServer(app);
 
 app.use(
   cors({
-    origin: "https://sports-fiesta-api.vercel.app/",
+    origin: "https://sportsfiesta-kkwa.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -21,7 +21,7 @@ app.use(
 
 const io = socketIo(server, {
   cors: {
-    origin: "https://sports-fiesta-api.vercel.app/",
+    origin: "https://sportsfiesta-kkwa.onrender.com",
     methods: ["GET", "POST"],
   },
 });
