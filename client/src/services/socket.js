@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const socket = io('https://sports-fiesta-api.vercel.app/');
+const socket = io('https://sportsfiesta-kkwa.onrender.com');
 
 export const subscribeToScores = (callback) => {
   socket.on('scoreUpdate', callback);
